@@ -7,7 +7,7 @@ use App\view;
 
 class loginController{
     
-    public function index(): void{
-        echo (new View('loginView'))->render();
+    public function index(): string{
+        return View::make('loginView', ['name'=>'Floriaan'])->render();
     }
 }
